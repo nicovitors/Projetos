@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.center{
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+section.main{
+    background-image: url(../imagens/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0 80px 0;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu{width: 50%;}
+.itens-menu{
+    width: 50%;
+    text-align: right;
+}
+
+.itens-menu > a{
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu > a.contato-btn{
+    background-color: #0F3FD3;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.itens-menu > a.contato-btn:hover{
+    border: 0   ;
+}
+
+.itens-menu > a:hover{
+    border-bottom: 2px solid #FFDD33;
+}
+
+.mockup{
+    padding-top: 100px;
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+.mockup h1{
+    font-size: 50px;
+}
+
+.mockup img{
+    max-width: 100%;
+}
+
+section.marcas{
+    padding: 100px 0;
+}
+
+section.marcas > img{
+    width: 20%;
+}
+
+section.porque-nos{
+    padding: 40px 0;
+    background-color: #FBFCFE;
+}
+
+section.porque-nos > .center{
+    max-width: 1280px;
+}
+
+section.porque-nos > .center > h2{
+    text-align: center;
+    font-size: 64px;
+    width: 100%;
+}
+
+section.porque-nos > .center > p{
+    text-align: center;
+    font-size: 14px;
+    color: #ccc;
+    width: 100%;
+}
+
+.diferenciais{
+    margin-top: 50px;
+    display: flex;
+}
+
+.box-diferenciais{
+    box-shadow: 0 20px 40px #2426721C;
+    width: 31%;
+    margin-right: 2%;
+    padding: 10px 20px ;
+    border-radius: 10px;
+}
+
+.box-diferenciais h3{
+    color: #000;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.box-diferenciais p{
+    font-size: 23px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+}
+
+section.cta{
+    background-image: url(../imagens/banner_meio.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+    min-height: 200px;
+    text-align: center;
+    color: #fff;
+}
+
+section h2, h4{
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+section h2{
+    font-size: 40px;
+}
+
+section.cta a{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 18px;
+    font-weight: bold;
+    font-size: 17px;
+    background: #FFDD33;
+    text-decoration: none;
+    color: #0F3FD3;
+    border-radius: 7px;
+}
+
+section.beneficios{
+    padding: 50px 0;
+}
+
+.lista-bene{
+    margin-top: 30px;
+    width: 50%;
+}
+
+.lista-bene h1{
+    color: #000;
+    font-size: 40px;
+}
+
+.lista-bene p{
+    color: #7E92AC;
+    padding: 18px 0;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+.lista-bene img{
+    margin-top: -12px;
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+}
+
+.lista-bene span{
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.img-bene{
+    width: 50%;
+}
+
+.img-bene > img{
+    max-width: 100%;
+}
+
+.btn-bene{
+    text-align: left;
+    border-radius: 12px;
+    color: #ccc;
+    padding: 10px 30px;
+    background-color: #0F3FD3;
+}
+
+.btn-bene > a{
+    font-weight: bold;
+    color: #ccc;
+    text-decoration: none;
+}
+
+section.depoimentos{
+    background-color: #FBFCFE;
+    padding: 40px 0;
+}
+
+section.depoimentos > h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.container-slider{
+     overflow: hidden;
+}
+
+.container-slider-single{
+    float: left;
+    background-color: red;
+    padding: 10px;
+}
+
+/*Otimização mobile*/
+@media screen and (max-width: 768px){
+.lista-bene,.img-bene{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+    .diferenciais{
+
+        flex-wrap: wrap;
+    }
+    
+    .box-diferenciais{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    section.marcas > img{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    section.marcas > .center{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
